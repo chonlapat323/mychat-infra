@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     volumes:
       - mongo-data:/data/db
-    expose:
+    ports:
       - "27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
